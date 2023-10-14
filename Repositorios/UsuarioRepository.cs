@@ -50,7 +50,6 @@ namespace TrabajoPractico9{
             using(SQLiteConnection connection = new SQLiteConnection(cadenaConexion)){
                 connection.Open();
                 var command = new SQLiteCommand(query, connection);
-                connection.Open();
                 using(SQLiteDataReader reader = command.ExecuteReader()){
                     while(reader.Read()){
                         usuario.Id = Convert.ToInt32(reader["id"]);
