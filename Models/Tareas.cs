@@ -8,6 +8,7 @@ namespace Tareas{
     }
     public class Tarea{
         public int Id{ get => Id ; set => Id = value;}
+        public int IdTablero{ get => IdTablero ; set => IdTablero = value;}
         public string? Nombre{ get => Nombre ; set => Nombre = value;}
         public string? Descripcion{ get => Descripcion ; set => Descripcion = value;}
         public string? Color{ get => Color ; set => Color = value;}
